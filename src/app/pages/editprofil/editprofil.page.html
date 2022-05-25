@@ -1,0 +1,76 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>  Profile  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> 
+        Modifier votre profile
+      </ion-card-title>
+    </ion-card-header>
+    <form [formGroup]="UpdateForm" (ngSubmit)="confirmer()" >
+      <ion-card-content>
+        
+        <ion-item lines="none">
+          <ion-input name="nomCompletU" type="text" placeholder="Nom" formControlName="name" >
+            <ion-icon name="person-outline"  ></ion-icon>
+          </ion-input>
+        </ion-item> 
+        <ion-item lines="none">
+          <ion-input name="nomCompletU" type="text" placeholder="PreNom" formControlName="lastname" >
+            <ion-icon name="person-outline"  ></ion-icon>
+          </ion-input>
+        </ion-item> 
+        <ion-item lines="none">
+          <ion-input name="nomCompletU" type="text" placeholder="Username" formControlName="username" >
+            <ion-icon name="person-outline"  ></ion-icon>
+          </ion-input>
+        </ion-item> 
+        <ion-item lines="none">
+          <ion-input name="Email" type="text" placeholder="Email" formControlName="Email" >
+            <ion-icon name="at-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-input name="Telephone" type="text" placeholder="Telepone" formControlName="Telephone" >
+            <ion-icon name="call-outline" ></ion-icon>
+          </ion-input>
+        </ion-item>
+        <!-- <ion-item lines="none">
+          <ion-input name="Adresse" type="text" placeholder="Adresse" formControlName="Adresse" >
+            <ion-icon name="home-outline"></ion-icon>
+          </ion-input>
+        </ion-item> -->
+        <!-- <ion-item>
+        <ion-input name="Region" type="text" placeholder="Region" formControlName="Region" >
+          <ion-icon name="business-outline"></ion-icon>
+        </ion-input>
+      </ion-item> -->
+      <!-- <ion-item>
+        <ion-input name="Postale" type="text" placeholder="Code Postale" formControlName="Postale" >
+          <ion-icon name="mail-outline"></ion-icon>
+        </ion-input>
+      </ion-item> -->
+      <ion-label>Votre mot de passe</ion-label> 
+      <ion-item>
+        <ion-input name="password" type="password" placeholder="************" formControlName="oldPassword" >
+          <ion-icon name="lock-closed" ></ion-icon>
+        </ion-input>
+    </ion-item>
+    <ion-label>Nouveau mot de passe</ion-label>
+    <ion-item>
+      <ion-input name="password" type="password" placeholder="************" formControlName="newPassword" >
+        <ion-icon name="lock-closed" ></ion-icon>
+      </ion-input>
+  </ion-item>
+  <ion-button type="submit" >Valider changements</ion-button>
+      </ion-card-content>
+    </form>
+</ion-card>
+</ion-content>
+

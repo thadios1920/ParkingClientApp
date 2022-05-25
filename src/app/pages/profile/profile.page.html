@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="main_content_div">
+    <ion-buttons slot="start" class="menu_btn" >
+      <ion-menu-button color="danger" ></ion-menu-button>
+    </ion-buttons> 
+
+    <div class="user_div" >
+      <div class="first_div">
+        <ion-label class="username"> {{userName}} </ion-label>
+      </div>
+      <div class="user_back" [style.backgroundImage]="'url(assets/images/user.png)'" ></div>
+    </div>
+
+    <div class="content_div">
+      <div class="test_details">
+        <ion-grid fixed >
+          <ion-row>
+            <ion-col size="6" >
+              <div class="flex_div">
+                <ion-avatar >
+                  <img src="../../../assets/images/polo.jpg">
+                </ion-avatar>
+                <div class="details"> 
+                  <ion-label class="bold_lbl"> {{carName}} </ion-label>
+                  <ion-label class="small_lbl"> {{carSerial}} </ion-label>  
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <div class="list_div" (click)="onEditer()" >
+        <ion-label>Editer Profile</ion-label>
+        <ion-icon name="chevron-forward-outline" ></ion-icon>
+      </div>
+      <div class="list_div">
+        <ion-label>Ajouter Voiture</ion-label>
+        <ion-icon name="chevron-forward-outline" ></ion-icon>
+      </div>
+      <div class="list_div" (click)="onHistory()" >
+        <ion-label>Historique des Payements</ion-label>
+        <ion-icon name="chevron-forward-outline" ></ion-icon>
+      </div>
+      <div class="list_div"  (click)="onQuitter()">
+        <ion-label  >Quitter</ion-label>
+        <ion-icon name="chevron-forward-outline" ></ion-icon>
+      </div>
+    </div>
+  </div>
+</ion-content>

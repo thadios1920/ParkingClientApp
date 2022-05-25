@@ -1,0 +1,100 @@
+{
+  "drivers": [
+    {
+      "name": "test",
+      "lastname": "test",
+      "username": "test",
+      "cars": [
+        {
+          "main": true,
+          "serialNumber": "default",
+          "brand": "default",
+          "model": "default",
+          "color": "default"
+        }
+      ],
+      "transactions": [],
+      "payments": [
+        {
+          "id": 1,
+          "date": "14/02/2022",
+          "paidAmount": 600,
+          "object": "Amande",
+          "paymentMethod": "string"
+        }
+      ],
+      "phone": "4848484",
+      "email": "hamma@hmio.com",
+      "password": "Testlogin.com",
+      "id": 2
+    },
+    {
+      "name": "aymen",
+      "lastname": "ajroudi",
+      "username": "aymen",
+      "cars": [
+        {
+          "main": true,
+          "serialNumber": "default",
+          "brand": "default",
+          "model": "default",
+          "color": "default"
+        }
+      ],
+      "transactions": [],
+      "payments": [
+        {
+          "date": "14/02/2022",
+          "paidAmount": 600,
+          "object": "Amande",
+          "paymentMethod": "string"
+        }
+      ],
+      "phone": "154654",
+      "email": "aymen@gmail.com",
+      "password": "login123",
+      "id": 3
+    }
+  ],
+  "login": {
+    "name": "aymen",
+    "lastname": "ajroudi",
+    "username": "aymen",
+    "cars": [
+      {
+        "main": true,
+        "serialNumber": "default",
+        "brand": "default",
+        "model": "default",
+        "color": "default"
+      }
+    ],
+    "transactions": [],
+    "payments": [
+      {
+        "date": "14/02/2022",
+        "paidAmount": 600,
+        "object": "Amande",
+        "paymentMethod": "string"
+      }
+    ],
+    "phone": "154654",
+    "email": "aymen@gmail.com",
+    "password": "login123",
+    "id": 3
+  },
+  "parkings": [
+    {
+      "address": "Menzah",
+      "name": "Parking de Menzah",
+      "nbPlaces": 500,
+      "nbAvailablePlaces": 0
+    },
+    {
+      "address": "Manar",
+      "name": "Parking de Manar",
+      "nbPlaces": 500,
+      "nbAvailablePlaces": 20
+    }
+  ]
+}

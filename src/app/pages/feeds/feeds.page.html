@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary" >
+    <ion-buttons slot="start" >
+      <ion-menu>g</ion-menu>
+    </ion-buttons>
+    <ion-title>Parki</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar [(ngModel)]="term" showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+  <ion-item *ngFor="let item of parkings | filter:term " (click)="submitPayment()" >
+    
+    <ion-label [ngClass]="item.nbAvailablePlaces>0 ? 'alert alert-success':'alert alert-danger'" >
+      <h2> {{item.address}} </h2>
+      <h3> {{item.name}} </h3> 
+      <p> Places disponibles {{item.nbAvailablePlaces}}</p>
+      <p>Nous sommes ravies de vous recevoir dans notre Parking</p>
+    </ion-label>
+  </ion-item>
+  
+</ion-list>
+</ion-content>

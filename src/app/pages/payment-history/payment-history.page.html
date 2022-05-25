@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>paymentHistory</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content>
+  <ion-list>
+    <ng-container *ngIf="payments.length>0" >
+  <ion-item *ngFor="let item of payments"  >
+    
+    <ion-label >
+      <h2> Date  {{item.date  }} - Valeur {{item.paidAmount}}  </h2>
+      <p> Objet de payment : {{item.object}}</p>
+      <ion-icon name="trash-outline" (click)="deleteById()" ></ion-icon> 
+      </ion-label>
+  </ion-item>
+</ng-container>
+<ng-container *ngIf="payments.length==0" >
+  <div class="alert alert-secondary" role="alert">
+    Pas de payments a consulter !!
+  </div>
+</ng-container>
+</ion-list>
+</ion-content>

@@ -1,0 +1,119 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-button>
+				<ion-icon name="apps"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+
+		<ion-buttons slot="end">
+			<ion-button class="bordered" fill="solid" color="light">
+				<ion-icon color="custom" name="notifications"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+
+	<ion-item lines="none">
+
+		<ion-avatar slot="start">
+			<img src="assets/images/user.png">
+    </ion-avatar>
+			<ion-label>
+				<p>Bonjour,</p>
+				<h3>{{username}}</h3>
+			</ion-label>
+
+	</ion-item>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="assets/parking.png">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom"> Parking Manar </ion-card-title>
+            <ion-card-subtitle class="ion-text-right"> avis de la semaine 80%</ion-card-subtitle>
+            <ion-progress-bar value="0.8" color="custom"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="assets/parking2.jpg">
+            </div>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom"> Parking Tunid </ion-card-title>
+            <ion-card-subtitle class="ion-text-right"> avis de la semaine 60%</ion-card-subtitle>
+            <ion-progress-bar value="0.6" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="container">
+
+    <h2>Dernières operations</h2>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="card-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4> 3 Heures </h4>
+							<h6>6 DT</h6>
+						</ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+        <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="pricetag-sharp"></ion-icon>
+                </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+							<h4>Amende</h4>
+							<h6>40DT</h6>
+						</ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </div>
+
+</ion-content>
